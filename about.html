@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Al Moruff</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Al Moruff Ent</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>About Al Moruff Enterprise</h2>
+        <p>Your trusted partner for industrial sewing machines and spare parts.</p>
+    </section>
+
+    <section class="mission-vision">
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>To provide top-quality sewing machines and accessories, ensuring excellence and reliability for all garment-making needs.</p>
+        </div>
+        <div class="vision">
+            <h3>Our Vision</h3>
+            <p>To become the leading supplier of industrial sewing solutions, empowering businesses and individuals with state-of-the-art products.</p>
+        </div>
+    </section>
+
+    <section class="history">
+        <h2>Our Journey</h2>
+        <p>Al Moruff Enterprise started as a small family-owned business dedicated to supplying sewing enthusiasts with quality tools. Over the years, we have grown into a trusted name in industrial sewing machines and spare parts, serving both local and international clients.</p>
+        <img src="journey.jpg" alt="Our journey image">
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="profile.png" alt="Team Member">
+                <h4>Moruff Alade</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member2.jpg" alt="Team Member">
+                <h4>Fatimah Alade</h4>
+                <p>Operations Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="team_member3.jpg" alt="Team Member">
+                <h4>Hassan Ibrahim</h4>
+                <p>Technical Lead</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Quality Products:</strong> We ensure our products meet the highest standards.</li>
+            <li><strong>Customer Support:</strong> Our team is always ready to assist you.</li>
+            <li><strong>Affordable Prices:</strong> Get the best value for your money.</li>
+            <li><strong>Fast Delivery:</strong> Reliable shipping to get your items on time.</li>
+        </ul>
+    </section>
+    
+    <section class="our-values">
+        <h2>Our Values</h2>
+        <p>We operate with integrity, quality, and customer satisfaction at the heart of everything we do. Our core values guide our journey to excellence and innovation.</p>
+        <div class="values-container">
+            <div class="value-card">
+                <h3>Integrity</h3>
+                <p>We uphold honesty and strong moral principles in all our dealings.</p>
+            </div>
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>Delivering excellence in every product and service we offer.</p>
+            </div>
+            <div class="value-card">
+                <h3>Innovation</h3>
+                <p>Constantly improving to meet modern sewing and design needs.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="our-process">
+        <h2>Our Process</h2>
+        <ol>
+            <li><strong>Step 1:</strong> Understanding your needs.</li>
+            <li><strong>Step 2:</strong> Offering tailored product recommendations.</li>
+            <li><strong>Step 3:</strong> Seamless order processing and fast delivery.</li>
+            <li><strong>Step 4:</strong> Ongoing customer support for every purchase.</li>
+        </ol>
+    </section>
+    
+    <section class="sustainability">
+        <h2>Our Sustainability Commitment</h2>
+        <p>At Al Moruff Enterprise, we are committed to environmentally friendly practices. We strive to minimize waste and source sustainable materials in our operations.</p>
+        <ul>
+            <li>Eco-friendly packaging for all products.</li>
+            <li>Recycling programs for old sewing machines.</li>
+            <li>Partnerships with green suppliers.</li>
+        </ul>
+    </section>
+    
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Al Moruff Enterprise is simply the best! Their machines have transformed my business."</p>
+                <h4>- Aisha Bello</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent customer service and top-notch products. Highly recommend!"</p>
+                <h4>- Kwame Ofori</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I always trust Al Moruff for my sewing needs. They never disappoint."</p>
+                <h4>- Sarah Mensah</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Al Moruff Enterprise. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+         const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+
+            // Change the icon between hamburger and X
+            if (menuToggle.textContent === '\u2630') { // Hamburger icon
+                menuToggle.textContent = '\u2715'; // X icon
+            } else {
+                menuToggle.textContent = '\u2630'; // Back to hamburger icon
+            }
+         });
+        });
+    </script>
+    
+</body>
+</html>

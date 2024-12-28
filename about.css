@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+html,body{
+    overflow-x: hidden;
+}
+nav {
+    background-color: gold;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffc;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(to right, gold, yellow);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 46px;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+}
+
+.mission-vision div {
+    width: 45%;
+}
+
+.mission-vision h3 {
+    color: gold;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.history {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fffbe6;
+}
+
+.history img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.team {
+    padding: 40px 20px;
+    background-color: gold;
+    color: white;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/**** Why Choose Us Section ****/
+.why-choose-us {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.why-choose-us h2 {
+    font-size: 30px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.why-choose-us strong {
+    color: yellow;
+}
+
+/**** Our Values Section ****/
+.our-values {
+    padding: 40px;
+    background-color: gold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.our-values p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.value-card {
+    background-color: white;
+    color: gold;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 16px;
+}
+
+/**** Our Process Section ****/
+.our-process {
+    padding: 40px;
+    background-color: yellow;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.our-process h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.our-process ol {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.our-process li {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/**** Sustainability Commitment Section ****/
+.sustainability {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.sustainability h2 {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.sustainability p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sustainability ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.sustainability li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.testimonials {
+    padding: 40px 20px;
+    background-color: yellow;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: white;
+    color: gold;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: gold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .why-choose-us{
+        text-align: start;
+    }
+    .values-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .value-card{
+        width: 90%;
+    }
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .testimonial {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #ffcc00;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .navbar .nav-links a {
+        margin: 0.5rem 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .hero h2{
+        font-size: 30px;
+    }
+
+    .mission-vision{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mission-vision div{
+        width: 100%;
+    }
+
+    .our-process {
+        padding: 20px;
+    }
+
+    .our-values{
+        padding: 40px 20px;
+    }
+}

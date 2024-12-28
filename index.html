@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Moruff Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Al Moruff Ent</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to Al Moruff Enterprise</h2>
+        <p>Your trusted dealer in industrial sewing machines and spare parts.</p>
+        <button onclick="window.open('products.html','_self')">Shop Now</button>
+    </section>
+
+    <!-- recommended section -->
+    <section class="recommendation-widget" id="recommendation-widget">
+        <h2>Recommended for You</h2>
+        <div class="recommendation-container">
+            <div class="recommendation-card" onclick="openProductPopup('Compact Sewing Machine', 'Perfect for beginners and small projects.', 'sewing_machine_1.jpg', '450')">
+                <img src="sewing_machine_1.jpg" alt="Recommended Product">
+                <h3>Compact Sewing Machine</h3>
+                <p>Perfect for beginners and small projects.</p>
+                <button onclick="openProductPopup('Compact Sewing Machine', 'Perfect for beginners and small projects.', 'sewing_machine_1.jpg', '450'); event.stopPropagation()">View Details</button>
+            </div>
+            <div class="recommendation-card" onclick="openProductPopup('Heavy Duty Machine', 'Ideal for industrial and high-volume tasks.', 's1.jpg', '9200')">
+                <img src="s1.jpg" alt="Recommended Product">
+                <h3>Heavy Duty Machine</h3>
+                <p>Ideal for industrial and high-volume tasks.</p>
+                <button onclick="openProductPopup('Heavy Duty Machine', 'Ideal for industrial and high-volume tasks.', 's1.jpg', '9200'); event.stopPropagation()">View Details</button>
+            </div>
+            <div class="recommendation-card" onclick="openProductPopup('Portable Sewing Kit', 'Everything you need in one compact set.', 's6.webp', '200')">
+                <img src="s6.webp" alt="Recommended Product">
+                <h3>Portable Sewing Kit</h3>
+                <p>Everything you need in one compact set.</p>
+                <button onclick="openProductPopup('Portable Sewing Kit', 'Everything you need in one compact set.', 's6.webp', '200'); event.stopPropagation()">View Details</button>
+            </div>
+            <div class="recommendation-card" onclick="openProductPopup('Portable Sewing Kit', 'Everything you need in one compact set.', 's4.jpg', '200')">
+                <img src="s4.jpg" alt="Recommended Product">
+                <h3>Portable Sewing Kit</h3>
+                <p>Everything you need in one compact set.</p>
+                <button onclick="openProductPopup('Portable Sewing Kit', 'Everything you need in one compact set.', 's4.jpg', '200'); event.stopPropagation()">View Details</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="product-popup" id="product-popup">
+        <div class="product-popup-content" id="product-popup-content">
+            <span class="product-popup-close" id="product-popup-close">&times;</span>
+            <img id="product-popup-image" src="" alt="Product Image">
+            <h3 id="product-popup-title"></h3>
+            <p id="product-popup-description"></p>
+            <p><strong>Price: GHS <span id="product-popup-price"></span></strong></p>
+            <button id="product-popup-buy">Buy Now</button>
+        </div>
+    </div>
+    
+    
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="close" id="popup-close">&times;</span>
+            <img id="popup-image" src="" alt="Product Image">
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <p><strong>Price: GHS <span id="popup-price"></span></strong></p>
+            <button id="popup-buy-now">Buy Now</button>
+        </div>
+    </div>
+    
+    <h1>Featured Sewing Machines</h1>
+<section class="products" id="products">
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's2.webp', '9200')">
+        <img src="s2.webp" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's2.webp', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's3.webp', '9200')">
+        <img src="s3.webp" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's3.webp', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's7.jpg', '9200')">
+        <img src="s7.jpg" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's7.jpg', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's3.webp', '9200')">
+        <img src="s5.webp" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's5.webp', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's8.jpg', '9200')">
+        <img src="s8.jpg" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's8.jpg', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+
+    <div class="product" onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's9.png', '9200')">
+        <img src="s9.png" alt="Sewing Machine">
+        <h3>Industrial Sewing Machine</h3>
+        <p>High-quality industrial sewing machine for professional use.</p>
+        <p><strong>Price: GHS 9,200</strong></p>
+        <button onclick="openProductPopup('Industrial Sewing Machine', 'High-quality industrial sewing machine for professional use.', 's9.png', '9200'); event.stopPropagation()">View Details</button>
+    </div>
+    <!-- Add more products in the same format -->
+</section>
+
+<h1>Trending Products</h1>
+<section class="products">
+    <div class="product" onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's10.jpg', '5000')">
+        <img src="s10.jpg" alt="Trending Product 1">
+        <h3>Trending Product 1</h3>
+        <p>Popular product among customers.</p>
+        <p><strong>Price: GHS 5,000</strong></p>
+        <button onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's10.jpg', '5000'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's11.webp', '5000')">
+        <img src="s11.webp" alt="Trending Product 1">
+        <h3>Trending Product 1</h3>
+        <p>Popular product among customers.</p>
+        <p><strong>Price: GHS 5,000</strong></p>
+        <button onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's11.webp', '5000'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's12.png', '5000')">
+        <img src="s12.png" alt="Trending Product 1">
+        <h3>Trending Product 1</h3>
+        <p>Popular product among customers.</p>
+        <p><strong>Price: GHS 5,000</strong></p>
+        <button onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's12.png', '5000'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's13.png', '5000')">
+        <img src="s13.png" alt="Trending Product 1">
+        <h3>Trending Product 1</h3>
+        <p>Popular product among customers.</p>
+        <p><strong>Price: GHS 5,000</strong></p>
+        <button onclick="openProductPopup('Trending Product 1', 'Popular product among customers.', 's13.png', '5000'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Trending Product 2', 'Top-rated product with excellent reviews.', 's14.jpg', '7800')">
+        <img src="s14.jpg" alt="Trending Product 2">
+        <h3>Trending Product 2</h3>
+        <p>Top-rated product with excellent reviews.</p>
+        <p><strong>Price: GHS 7,800</strong></p>
+        <button onclick="openProductPopup('Trending Product 2', 'Top-rated product with excellent reviews.', 's14.jpg', '7800'); event.stopPropagation()">View Details</button>
+    </div>
+    <div class="product" onclick="openProductPopup('Trending Product 2', 'Top-rated product with excellent reviews.', 's17.webp', '7800')">
+        <img src="s17.webp" alt="Trending Product 2">
+        <h3>Trending Product 2</h3>
+        <p>Top-rated product with excellent reviews.</p>
+        <p><strong>Price: GHS 7,800</strong></p>
+        <button onclick="openProductPopup('Trending Product 2', 'Top-rated product with excellent reviews.', 's17.webp', '7800'); event.stopPropagation()">View Details</button>
+    </div>
+    <!-- Add more products in the same format -->
+</section>
+
+
+    <section class="testimonials" id="testimonials">
+        <h1>What Our Customers Say</h1>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Al Moruff Enterprise provided me with the best sewing machine at an unbeatable price. Their service is top-notch!"</p>
+                <h3>Jane Doe</h3>
+                <span>Fashion Designer</span>
+            </div>
+            <div class="testimonial">
+                <p>"The spare parts I bought were genuine and fit perfectly. I highly recommend them for all your sewing needs."</p>
+                <h3>John Smith</h3>
+                <span>Tailor</span>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent customer service and fast delivery. I will definitely buy again from Al Moruff Enterprise."</p>
+                <h3>Mary Johnson</h3>
+                <span>Business Owner</span>
+            </div>
+        </div>
+    </section>
+
+     <!-- Services Section -->
+     <section class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="service-container">
+            <div class="service">
+                <img src="repair.png" alt="Repair Service">
+                <h3>Machine Repairs</h3>
+                <p>Expert repair services for all industrial sewing machines.</p>
+            </div>
+            <div class="service">
+                <img src="consultant.jpg" alt="Consultation">
+                <h3>Product Consultation</h3>
+                <p>Personalized guidance to help you choose the right machine.</p>
+            </div>
+            <div class="service">
+                <img src="training.jpg" alt="Workshops">
+                <h3>Training Workshops</h3>
+                <p>Comprehensive training for operating industrial sewing machines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers" id="special-offers">
+        <h3>Special Offers & Discounts</h3>
+        <div class="offers-container">
+            <div class="offer">
+                <img src="s15.jpg" alt="Discounted Machine">
+                <h3>30% Off Overlock Machine</h3>
+                <p>Get this high-quality overlock machine at an unbeatable price.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="offer">
+                <img src="s16.webp" alt="Limited Time">
+                <h3>10% Off Embroidery Machine</h3>
+                <p>Upgrade your business with this advanced embroidery machine.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal Popup -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalProductName">Product Name</h3>
+            <p id="modalProductDescription">Product Description</p>
+            <p id="modalProductPrice">Price: GHS</p>
+            <button id="buyNowButton">Buy Now</button>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Al Moruff Enterprise. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Popup Container -->
+    <div class="popup" id="popup">
+        <button class="popup-close" onclick="hidePopup()">×</button>
+        <img id="popup-image" src="" alt="Popup Image">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
