@@ -17,7 +17,7 @@ h1{
 nav {
     background-color: gold;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,7 +186,7 @@ nav {
 @media (max-width: 768px) {
     .navbar .nav-links {
         position: absolute;
-        top: 80px;
+        top: 70px;
         left: 0;
         width: 100%;
         background-color: #ffcc00;

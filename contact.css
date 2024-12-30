@@ -10,7 +10,7 @@ h1{
 nav {
     background-color: gold;
     color: white;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
