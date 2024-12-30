@@ -1,6 +1,6 @@
  // WhatsApp Function
  function sendToWhatsApp(productName, productDescription, productPrice) {
-    const phoneNumber = "0245829714";
+    const phoneNumber = "+233243173767";
     const message = `Hello, I am interested in the following product:\n\nProduct Name: ${productName}\nDescription: ${productDescription}\nPrice: GHS ${productPrice}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -28,7 +28,7 @@ document.getElementById("modalProductPrice").textContent = `Price: GHS ${price}`
 // Add functionality to "Buy Now" button
 const buyNowButton = document.getElementById("buyNowButton");
 buyNowButton.onclick = function() {
-const phoneNumber = "+233277475146";
+const phoneNumber = "+233243173767";
 const message = `Hello, I am interested in purchasing the following product:\n\nProduct Name: ${name}\nDescription: ${description}`;
 const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 window.open(url, "_blank");
@@ -58,7 +58,7 @@ function openProductPopup(productName, productDescription, productImage, product
     popupPrice.textContent = productPrice;
 
     buyNowButton.onclick = function () {
-        const phoneNumber = "+233277475146";
+        const phoneNumber = "+233243173767";
         const message = `Hello, I am interested in the following product:\n\nProduct Name: ${productName}\nDescription: ${productDescription}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
